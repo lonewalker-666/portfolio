@@ -1,0 +1,15 @@
+[
+  {
+    "company": "Freelance",
+    "role": "Full-Stack Developer",
+    "duration": "2024 – Present",
+    "location": "Remote",
+    "description": [
+      "Built a multi-tenant SaaS LMS from the ground up using Next.js and Node.js, supporting multiple institutions on shared infrastructure with tenant-scoped data and admin controls.",
+      "Developed a digital advertising platform for TV ad campaign management, covering scheduling, delivery tracking, and reporting for media planning teams.",
+      "Designed and built backend systems for a college application management platform, improving applicant workflows and operational efficiency for staff.",
+      "Worked directly with clients end-to-end — requirements, architecture, implementation, and deployment — across each engagement."
+    ],
+    "technologies": ["Next.js", "Node.js", "PostgreSQL", "TypeScript", "REST APIs"]
+  }
+]
