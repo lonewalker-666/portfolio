@@ -2,10 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-/**
- * Tracks which of the given section ids is currently most in view,
- * using an IntersectionObserver rather than scroll-position math.
- */
+
 export function useActiveSection(ids: string[], initial: string = ids[0]) {
   const [active, setActive] = useState(initial);
 

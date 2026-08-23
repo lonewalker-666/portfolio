@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://kishorekumar.dev/sitemap.xml",
+    sitemap: "https://portfolio-eight-cyan-bcmtc3awoy.vercel.app/sitemap.xml",
   };
 }
