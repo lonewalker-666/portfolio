@@ -103,7 +103,7 @@ export default function ExperienceTimeline() {
           index="03"
           label="Experience"
           title="Where the systems got built"
-          description="Reverse-chronological log of engagements — expand any entry for the full scope."
+          description="A reverse-chronological look at the products and systems I’ve worked on. Expand an entry to see the details."
         />
 
         <div className="space-y-10">

@@ -11,8 +11,9 @@ export const personal = {
     github: "https://github.com/lonewalker-666",
   },
   summary:
-    "Full-Stack Developer with 4+ years of production experience building backend-heavy, revenue-critical systems across fintech, SaaS, and logistics. Deep expertise in Node.js, React, REST APIs, and microservices, with a strong fintech track record designing payment systems, multi-tenant platforms, real-time applications, and asynchronous workflows. Proven ability to own systems end-to-end — from architecture and backend development through AWS deployment — and deliver under real-world production constraints.",
-  status: "Open to new opportunities after completing my role at Mynerva (April 2026).",
+    "Full-Stack Developer with 4+ years of production experience building backend-heavy, revenue-critical systems across fintech, SaaS, and logistics. I specialize in Node.js, React, REST APIs, and microservices, with hands-on experience building payment systems, multi-tenant platforms, real-time applications, and asynchronous workflows. I enjoy taking ownership of systems end to end, from architecture and backend development to AWS deployment, while solving the practical challenges that come with real-world production environments.",
+  status:
+    "Open to new opportunities after completing my role at Mynerva (April 2026).",
 };
 
 export type Experience = {
@@ -179,67 +180,37 @@ export const keySystems: KeySystem[] = [
     name: "Bubbl Digital Business Card Platform",
     summary:
       "NFC-based digital business card product with digital identity and business-card management capabilities, including an AI-assisted OCR workflow for converting physical business cards into digital information.",
-    stack: [
-      "Python",
-      "Flask",
-      "Ollama",
-      "Llama 3.1 8B Instruct",
-      "Cloudflare",
-    ],
+    stack: ["Python", "Flask", "Ollama", "Llama 3.1 8B Instruct", "Cloudflare"],
   },
   {
     name: "FR8 Logistics Platform",
     summary:
       "B2B logistics platform supporting order matching, fleet management, driver workflows, operations dashboards, and internal HR systems.",
-    stack: [
-      "React",
-      "React Native",
-      "Node.js",
-      "REST APIs",
-      "RBAC",
-    ],
+    stack: ["React", "React Native", "Node.js", "REST APIs", "RBAC"],
   },
   {
     name: "Multi-Tenant SaaS LMS",
     summary:
       "Learning management platform for music academies, tuition centres, and karate classes with tenant-scoped administration and operational workflows.",
-    stack: [
-      "Next.js",
-      "Node.js",
-      "PostgreSQL",
-    ],
+    stack: ["Next.js", "Node.js", "PostgreSQL"],
   },
   {
     name: "College Application Platform",
     summary:
       "College application submission platform with application workflows and an integrated payments backend.",
-    stack: [
-      "Fastify",
-      "Prisma",
-      "Supabase",
-      "Flutter",
-    ],
+    stack: ["Fastify", "Prisma", "Supabase", "Flutter"],
   },
   {
     name: "TV Digital Signage Platform",
     summary:
       "Digital signage platform for malls and restaurants with a TV application for advertisement playback and an administration dashboard for campaign management and monitoring.",
-    stack: [
-      "Next.js",
-      "Node.js",
-    ],
+    stack: ["Next.js", "Node.js"],
   },
   {
     name: "GPT Clone Project",
     summary:
       "Personal conversational AI application built around a locally hosted large language model with a ChatGPT-style user interface.",
-    stack: [
-      "Ollama",
-      "gpt-oss:20b",
-      "TypeScript",
-      "React",
-      "Python",
-    ],
+    stack: ["Ollama", "gpt-oss:20b", "TypeScript", "React", "Python"],
   },
 ];
 
@@ -251,11 +222,7 @@ export type SkillCategory = {
 export const skills: SkillCategory[] = [
   {
     category: "Languages",
-    skills: [
-      "JavaScript (ES6+)",
-      "TypeScript",
-      "Python",
-    ],
+    skills: ["JavaScript (ES6+)", "TypeScript", "Python"],
   },
   {
     category: "Frontend",
@@ -283,20 +250,11 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Databases",
-    skills: [
-      "PostgreSQL",
-      "MySQL",
-      "MongoDB",
-      "Redis",
-    ],
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
   },
   {
     category: "ORM / Data Access",
-    skills: [
-      "Prisma",
-      "Sequelize",
-      "Drizzle",
-    ],
+    skills: ["Prisma", "Sequelize", "Drizzle"],
   },
   {
     category: "Cloud & Infra",
@@ -384,127 +342,179 @@ export const projects: Project[] = [
   {
     title: "Mynerva EdTech Platform",
     description:
-      "Microservices-based e-learning platform serving thousands of learners across course creation, creator onboarding, monetisation, analytics, and real-time communication. Contributed to the platform's AWS-based media processing architecture and payment infrastructure.",
+      "Microservices-based e-learning platform covering course creation, creator onboarding, monetisation, analytics, real-time communication, media processing, and payments. Designed and owned backend services, AWS infrastructure, hybrid FFmpeg and MediaConvert video processing, HLS streaming, asynchronous workflows, and payment infrastructure.",
     stack: [
       "Node.js",
       "React",
+      "TypeScript",
+      "JavaScript",
+      "Express",
+      "MySQL",
       "MongoDB",
-      "MYSQL",
       "Sequelize",
       "AWS",
+      "EC2",
       "S3",
+      "RDS",
       "Lambda",
       "SQS",
       "MediaConvert",
+      "CloudFront",
+      "IAM",
       "Razorpay",
+      "FFmpeg",
+      "HLS",
       "SSE",
-      "Websockets",
-      "FFMPEG",
+      "WebSockets",
+      "REST APIs",
+      "Microservices",
+      "NGINX",
+      "GitHub Actions",
     ],
     category: "EdTech",
-    metric: "Hybrid FFmpeg + MediaConvert · Video Streaming",
+    metric: "~80% faster video publishing · Hybrid FFmpeg + MediaConvert",
   },
+
   {
     title: "Right 2 Pay Fintech Platform",
     description:
-      "Fintech PWA designed for low-bandwidth environments, providing payment and money-transfer workflows with transaction processing, biometric authentication, reconciliation, settlement tracking, and partner-bank integrations.",
+      "Fintech PWA designed for low-bandwidth environments, supporting wallet operations, UPI, AEPS, BBPS, DMT, bulk payments, and transaction workflows. Designed and owned payment processing, transaction state management, reconciliation, settlement tracking, retry handling, biometric authentication, and banking-partner integrations with YES BANK within the NPCI payment ecosystem.",
     stack: [
       "Node.js",
       "Express",
       "Python",
       "Flask",
+      "JavaScript",
       "PostgreSQL",
-      "NPCI APIs",
-      "AEPS",
+      "YES BANK",
+      "NPCI",
       "UPI",
+      "AEPS",
       "BBPS",
       "DMT",
+      "NEFT",
+      "Bulk Payments",
+      "Wallet Systems",
+      "Razorpay",
+      "Mantra SDK",
+      "Morpho SDK",
+      "Precision SDK",
+      "REST APIs",
     ],
     category: "Fintech",
-    metric: "500+ daily transactions",
+    metric: "500+ daily transactions · Multi-rail payment platform",
   },
+
   {
-    title: "Bubbl Digital Business Card Platform",
+    title: "Bubbl Digital Business Card & Access Platform",
+
     description:
-      "NFC-based digital business card product designed to provide digital business identities and contact management. Worked on an AI-assisted OCR workflow that converts physical business cards into structured digital information.",
+      "NFC-based digital identity platform for creating, managing, and sharing digital business cards and access cards. Worked across the web platform and backend services, including card management, digital profiles, NFC-based interactions, and an AI-assisted OCR workflow for converting physical business cards into structured digital information.",
+
     stack: [
+      "Node.js",
       "Python",
       "Flask",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "MySQL",
+      "NFC",
       "Ollama",
       "Llama 3.1 8B Instruct",
       "Cloudflare",
+      "AWS Elastic Beanstalk",
+      "AWS CodePipeline",
+      "TailwindCSS",
+      "REST APIs",
     ],
+
     category: "Product",
+
+    metric: "NFC Digital Identity · Business & Access Cards",
   },
+
   {
     title: "FR8 Logistics Platform",
     description:
-      "B2B logistics platform supporting order matching, fleet management, driver workflows, operations dashboards, and internal HR systems used by operations teams.",
+      "B2B logistics platform supporting order matching, fleet management, driver workflows, operations dashboards, and internal HR systems. Worked on web and mobile workflows across a nationwide logistics network.",
     stack: [
       "React",
       "React Native",
       "Node.js",
-      "REST APIs",
-      "RBAC",
+      "GraphQL",
+      "TypeScript",
+      "PostgreSQL",
+      "AWS",
     ],
     category: "Logistics",
-    metric: "100+ operations staff",
+    metric: "20,00,000+ loads fulfilled · 1,250+ daily shipments",
   },
+
   {
     title: "Multi-Tenant SaaS LMS",
     description:
-      "Learning management platform built for music academies, tuition centres, and karate classes to manage clients, staff, payments, payroll, attendance, and day-to-day operations.",
+      "Multi-tenant learning management platform for music academies, tuition centres, and karate classes covering client management, staff management, payments, payroll, and attendance. Designed tenant-based architecture with tenant-scoped workflows, authentication, authorization, and access control.",
     stack: [
       "Next.js",
+      "React",
       "Node.js",
+      "TypeScript",
       "PostgreSQL",
+      "REST APIs",
     ],
     category: "SaaS",
+    metric: "Multi-tenant architecture · 3 business domains",
   },
+
   {
     title: "College Application Platform",
     description:
-      "College application submission platform supporting application workflows and an integrated backend for processing application-related payments.",
+      "College application submission platform supporting application workflows and an integrated payments backend for processing application-related transactions.",
     stack: [
       "Fastify",
+      "Node.js",
+      "TypeScript",
       "Prisma",
       "Supabase",
-      "Flutter",
+      "PostgreSQL",
+      "REST APIs",
     ],
     category: "EdTech",
+    metric: "End-to-end application workflow · Integrated payments",
   },
+
   {
     title: "TV Digital Signage Platform",
     description:
       "Digital signage platform developed for malls and restaurants, consisting of a TV application for advertisement playback and an administration dashboard for managing and monitoring campaigns.",
-    stack: [
-      "Next.js",
-      "Node.js",
-    ],
+    stack: ["Next.js", "React", "Node.js", "TypeScript", "REST APIs"],
     category: "Advertising",
+    metric: "TV playback + campaign management platform",
   },
+
   {
     title: "GPT Clone Project",
     description:
       "Personal conversational AI application with a ChatGPT-style interface backed by a locally hosted large language model.",
     stack: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Python",
       "Ollama",
       "gpt-oss:20b",
-      "TypeScript",
-      "React",
-      "Python",
     ],
     category: "AI",
+    metric: "Local LLM inference · gpt-oss:20b",
   },
+
   {
     title: "AI Teacher Cloning — Feasibility Research",
     description:
       "Independent research evaluating voice, vision, persona, and retrieval-augmented approaches for building LLM-based educational agents.",
-    stack: [
-      "RAG",
-      "LLM APIs",
-      "Python",
-    ],
+    stack: ["Python", "RAG", "LLM APIs"],
     category: "AI",
+    metric: "Voice + vision + RAG feasibility study",
   },
 ];

@@ -19,7 +19,7 @@ export default function Contact() {
           index="07"
           label="Contact"
           title="Let's build something that has to work"
-          description="Open to full-time roles and select freelance engagements — reach out directly or use the form."
+          description="Open to full-time opportunities and select freelance work. If you have a project or role in mind, I'd be happy to hear about it."
         />
 
         <div className="grid gap-10 md:grid-cols-2">

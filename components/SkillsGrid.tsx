@@ -14,7 +14,7 @@ export default function SkillsGrid() {
           index="02"
           label="Skills"
           title="Toolbox"
-          description="Grouped the way I actually reach for it — languages up through infra and the fintech-specific stack that shows up in most of my production work."
+          description="A practical stack built around the technologies I use in production, from frontend and backend development to cloud infrastructure and fintech systems."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

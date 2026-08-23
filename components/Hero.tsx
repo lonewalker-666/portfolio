@@ -30,7 +30,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen flex-col justify-center overflow-hidden py-24 md:py-32"
+      className="relative flex  flex-col justify-center overflow-hidden py-24 md:py-32"
     >
       <div className="absolute inset-0 ledger-grid opacity-[0.35] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_20%,black,transparent)]" />
       <div
@@ -38,9 +38,9 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <Container className="relative flex lg:gap-10">
+      <Container className="relative flex flex-col lg:flex-row gap-10 items-center">
         <motion.div variants={container} initial="hidden" animate="show" className="max-w-3xl">
-          <motion.div
+          {/* <motion.div
             variants={item}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 font-mono text-xs text-signal"
           >
@@ -49,7 +49,7 @@ export default function Hero() {
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-signal" />
             </span>
             {personal.status}
-          </motion.div>
+          </motion.div> */}
 
           <motion.h1
             variants={item}
@@ -72,8 +72,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p variants={item} className="mt-6 max-w-xl text-lg text-muted leading-relaxed">
-            {personal.role} · {personal.tagline}. Based in {personal.location}, shipping
-            production payment infrastructure, migrations, and platforms that don&apos;t go down.
+            {personal.role} · {personal.tagline}.<br/>Based in {personal.location}, Building production systems across fintech, EdTech, SaaS, and real-time platforms. platforms that don't go down.
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap gap-3">
@@ -96,7 +95,6 @@ export default function Hero() {
             alt="KK"
             priority
             sizes="520px"
-            className="hidden lg:block"
           />
         </motion.div>
 
@@ -115,7 +113,7 @@ export default function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-signal/70" />
               <span className="h-2.5 w-2.5 rounded-full bg-wire/70" />
             </div>
-            <span className="font-mono text-xs text-muted">status.log</span>
+            <span className="font-mono text-xs text-muted">impact.log</span>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 divide-x-0 md:divide-x divide-border">
             {READOUT.map((stat, i) => (
@@ -129,7 +127,7 @@ export default function Hero() {
           </div>
           <div className="flex items-center gap-2 border-t border-border px-4 py-2.5 font-mono text-xs text-muted">
             <span className="text-signal">$</span> tail -f production.log
-            <span className="inline-block h-3.5 w-[7px] bg-signal/70 animate-blink" />
+            <span className="inline-block h-3.5 w-1.75 bg-signal/70 animate-blink" />
           </div>
         </motion.div>
       </Container>
