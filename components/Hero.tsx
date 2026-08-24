@@ -23,7 +23,11 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
+  },
 };
 
 export default function Hero() {
@@ -39,7 +43,12 @@ export default function Hero() {
       />
 
       <Container className="relative flex flex-col lg:flex-row gap-10 items-center">
-        <motion.div variants={container} initial="hidden" animate="show" className="max-w-3xl">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="max-w-3xl"
+        >
           {/* <motion.div
             variants={item}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 font-mono text-xs text-signal"
@@ -56,7 +65,7 @@ export default function Hero() {
             className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.05] tracking-tight text-balance"
           >
             I build the systems behind
-            <br className="hidden sm:block" /> {" "}
+            <br className="hidden sm:block" />{" "}
             <span className="relative inline-block text-signal">
               money, media, and scale.
               <svg
@@ -66,20 +75,41 @@ export default function Hero() {
                 preserveAspectRatio="none"
                 aria-hidden="true"
               >
-                <path d="M1 5.5 C 50 1, 150 1, 199 5.5" stroke="currentColor" strokeWidth="2" fill="none" />
+                <path
+                  d="M1 5.5 C 50 1, 150 1, 199 5.5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                />
               </svg>
             </span>
           </motion.h1>
 
-          <motion.p variants={item} className="mt-6 max-w-xl text-lg text-muted leading-relaxed">
-            {personal.role} · {personal.tagline}.<br/>Based in {personal.location}, Building production systems across fintech, EdTech, SaaS, and real-time platforms. platforms that don't go down.
+          <motion.p variants={item} className="mt-6 max-w-xl leading-relaxed">
+            <span className="block text-lg font-medium text-ink">
+              {personal.name}
+            </span>
+
+            <span className="mt-1 block text-base text-muted">
+              {personal.role} · {personal.tagline}
+            </span>
+
+            <span className="mt-3 block text-base text-muted">
+              Based in {personal.location}, building full-stack products across
+              fintech, EdTech, SaaS, logistics, and real-time applications.
+            </span>
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap gap-3">
             <Button href="#projects">
               View Projects <ArrowDown size={15} />
             </Button>
-            <Button href="/resume.pdf" variant="secondary" target="_blank" rel="noopener noreferrer">
+            <Button
+              href="/resume.pdf"
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Download size={15} /> Download Resume
             </Button>
             <Button href="#contact" variant="ghost">
@@ -88,7 +118,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
         <motion.div>
-           <Image
+          <Image
             src="/hero.png"
             width={520}
             height={520}
@@ -97,8 +127,6 @@ export default function Hero() {
             sizes="520px"
           />
         </motion.div>
-
-        
       </Container>
       <Container>
         <motion.div
@@ -117,11 +145,16 @@ export default function Hero() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 divide-x-0 md:divide-x divide-border">
             {READOUT.map((stat, i) => (
-              <div key={stat.label} className={`p-5 ${i >= 2 ? "border-t md:border-t-0" : ""} border-border`}>
+              <div
+                key={stat.label}
+                className={`p-5 ${i >= 2 ? "border-t md:border-t-0" : ""} border-border`}
+              >
                 <div className="font-mono text-2xl md:text-3xl font-semibold text-signal">
                   {stat.value}
                 </div>
-                <div className="mt-1 text-xs text-muted leading-snug">{stat.label}</div>
+                <div className="mt-1 text-xs text-muted leading-snug">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>

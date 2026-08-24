@@ -1,7 +1,7 @@
 export const personal = {
   name: "Kishore Kumar R",
   role: "Full-Stack Developer",
-  tagline: "Node.js · React · Microservices · Fintech",
+  tagline: "React · Node.js · TypeScript · AWS",
   yearsExperience: 4,
   location: "Chennai, India",
   email: "kishorekk54321@gmail.com",
