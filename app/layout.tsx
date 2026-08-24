@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import ScrollProgress from "@/components/ScrollProgress";
 import BackToTop from "@/components/BackToTop";
 import { personal } from "@/app/data/resume";
+import { Analytics } from "@vercel/analytics/next";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -237,6 +238,7 @@ export default function RootLayout({
           {children}
           <BackToTop />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
