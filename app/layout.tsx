@@ -24,26 +24,136 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500"],
 });
 
-const siteUrl = "https://portfolio-eight-cyan-bcmtc3awoy.vercel.app";
+const siteUrl = "https://www.lonewalker.site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+
   title: {
     default: `${personal.name} — ${personal.role}`,
     template: `%s — ${personal.name}`,
   },
+
   description: personal.summary,
+
   keywords: [
+    // Identity
     "Kishore Kumar R",
+    "Kishore Kumar",
+    "Lonewalker",
+
+    // Primary positioning
     "Full-Stack Developer",
+    "Full-Stack Engineer",
+    "Backend Engineer",
+    "Backend Developer",
+    "Software Engineer",
+    "Fintech Engineer",
+
+    // Location / hiring intent
+    "Chennai Full-Stack Developer",
+    "Chennai Backend Developer",
+    "Chennai Software Engineer",
+    "Chennai Developer",
+    "India Full-Stack Developer",
+    "Remote Full-Stack Developer",
+    "Freelance Full-Stack Developer",
+    "Open to new opportunities",
+
+    // Core technologies
     "Node.js Developer",
     "React Developer",
-    "Fintech Engineer",
+    "TypeScript Developer",
+    "JavaScript Developer",
+    "Next.js Developer",
+    "Python Developer",
+    "AWS Developer",
+    "Cloud Engineer",
+
+    // Backend
+    "Node.js",
+    "Express.js",
+    "Fastify",
+    "REST APIs",
+    "GraphQL",
     "Microservices",
-    "Chennai Developer",
+    "Backend Architecture",
+    "Backend Development",
+    "Distributed Systems",
+    "Asynchronous Processing",
+    "Real-Time Applications",
+
+    // Frontend
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Tailwind CSS",
+    "React Native",
+
+    // Databases
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Redis",
+    "Prisma",
+    "Sequelize",
+
+    // AWS / Infrastructure
+    "AWS",
+    "AWS EC2",
+    "AWS S3",
+    "AWS RDS",
+    "AWS Lambda",
+    "AWS SQS",
+    "AWS MediaConvert",
+    "CloudFront",
+    "NGINX",
+    "Cloud Infrastructure",
+    "AWS Deployment",
+
+    // Domain expertise
+    "Fintech",
+    "Payment Systems",
+    "Payment Processing",
+    "UPI",
+    "AEPS",
+    "BBPS",
+    "DMT",
+    "SaaS",
+    "EdTech",
+    "Logistics",
+    "Multi-Tenant Platforms",
+
+    // Engineering expertise
+    "Payment Infrastructure",
+    "Transaction Processing",
+    "Payment Reconciliation",
+    "Idempotent APIs",
+    "System Design",
+    "Backend Systems",
+    "Production Systems",
+    "Scalable Systems",
+    "Cloud Architecture",
+
+    // AI
+    "AI Engineer",
+    "LLM Engineering",
+    "RAG",
+    "LLM Applications",
+    "AI Agents",
+    "Python AI Developer",
   ],
-  authors: [{ name: personal.name, url: siteUrl }],
+
+  authors: [
+    {
+      name: personal.name,
+      url: siteUrl,
+    },
+  ],
+
   creator: personal.name,
+
   openGraph: {
     type: "website",
     url: siteUrl,
@@ -51,18 +161,37 @@ export const metadata: Metadata = {
     description: personal.summary,
     siteName: personal.name,
     locale: "en_US",
+    images: [
+    {
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: `${personal.name} — ${personal.role}`,
+    },
+  ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: `${personal.name} — ${personal.role}`,
     description: personal.summary,
+    images: ["/og-image.png"],
+    creator: "@lonewalker_666",
   },
+
   alternates: {
     canonical: siteUrl,
   },
+
   robots: {
     index: true,
     follow: true,
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
@@ -80,6 +209,7 @@ export default function RootLayout({
     address: {
       "@type": "PostalAddress",
       addressLocality: personal.location,
+      addressCountry: "IN",
     },
     url: siteUrl,
     sameAs: [personal.links.linkedin, personal.links.github],

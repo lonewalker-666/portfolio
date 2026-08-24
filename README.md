@@ -6,7 +6,7 @@ The portfolio showcases my production experience across **fintech, EdTech, SaaS,
 
 ## Live Portfolio
 
-[View Live Portfolio](https://portfolio-eight-cyan-bcmtc3awoy.vercel.app/)
+[View Live Portfolio](https://www.lonewalker.site/)
 
 ## About
 
@@ -241,6 +241,6 @@ The goal is to communicate **technical ownership, production experience, and eng
 
 ## Links
 
-- **Portfolio:** [View Portfolio](https://portfolio-eight-cyan-bcmtc3awoy.vercel.app/)
+- **Portfolio:** [View Portfolio](https://www.lonewalker.site/)
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/r-kishore-kumar-85a5b8224)
 - **GitHub:** [GitHub Profile](https://github.com/lonewalker-666)
