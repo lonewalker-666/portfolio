@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local development tooling (not needed to build or deploy)
+/artifacts
+/reference
+/scripts
+/docs
+/.claude
+/CLAUDE.md

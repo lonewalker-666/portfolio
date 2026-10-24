@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "character": {
+    "id": "kishore",
+    "description": "One character, two looks. Both source images show the same person in a flat-shaded comic illustration style.",
+    "looks": {
+      "navy-night": {
+        "source": "/story/characters/source/kishore-navy-night.jpg",
+        "sha256": "d7640e2d8d9921105cbb411c056dba7eff3f1539b76d9a5187d4acb55d4827fa",
+        "width": 1254,
+        "height": 1254,
+        "alt": "Illustrated Kishore in a navy button-up shirt, leaning on a railing at night, palm trees and city lights in the background.",
+        "notes": "Curly black hair, navy shirt with chest pockets and rolled sleeves, thin gold chain, steel wristwatch on the left wrist, cream trousers. Calm half-smile. Casual mode."
+      },
+      "blazer-lights": {
+        "source": "/story/characters/source/kishore-blazer-lights.jpg",
+        "sha256": "57b793b48c5865b60f3fc987d50623f4a96c899b5b94f2df4992f09131b43dc0",
+        "width": 1088,
+        "height": 1445,
+        "alt": "Illustrated Kishore in a beige blazer over a black shirt, standing in front of palm fronds strung with warm fairy lights.",
+        "notes": "Swept-up black hair, moustache and goatee, beige blazer with lapel pin, open-collar black shirt, silver chain, white earbud in the left ear, hands near the jacket buttons. Professional mode."
+      }
+    }
+  },
+  "assets": []
+}
